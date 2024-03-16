@@ -9,6 +9,8 @@ router.get('/', async (req, res) => {
   // be sure to include its associated Products
   try {
     const categoryData = await Category.findAll({ include: [{ model: Product }] });
+    // LOOK AT RES.JSON FOR ALL ROUTES
+    res.json(categoryData);
   } catch (err) {
     // handling errors by sending a 500 status code with a message
     res.status(500).json({ message: 'Failed to get categories!'});

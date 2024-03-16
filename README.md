@@ -28,7 +28,7 @@ Please do not contribute to this repository. You may fork this one and make your
 
 ## [Test](#test)
 
-npm run test
+node server.js
 
 ## [License](#license)
 
